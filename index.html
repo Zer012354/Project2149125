@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strona Samoloty</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Strona Samoloty</h1>
+    <nav>
+      <ul>
+        <li><a href="#popularne-samoloty">Popularne samoloty</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#najlepszy-samolot">Najlepszy samolot</a></li>
+        <li><a href="#formularz">formularz</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <div class="banner-left">
+    <img src="sus.png" alt="Banner lewy">
+  </div>
+  <main>
+    <section id="historia-samolotow">
+        <h2>Czym jest samolot?</h2>
+        <p>Samolot to powietrzny środek transportu, który umożliwia podróżowanie lub transportowanie osób i towarów w przestworzach. Działa na zasadzie aerodynamiki, wykorzystując skrzydła do generowania siły nośnej, która utrzymuje samolot w powietrzu. Samoloty są napędzane przez silniki, które generują ciąg i pozwalają na poruszanie się przez powietrze.
+
+Samoloty są szeroko wykorzystywane w różnych dziedzinach, takich jak transport pasażerski, przewóz towarów, wojskowość, poszukiwanie i ratownictwo, a także badania naukowe. Zapewniają szybkie i efektywne pokonywanie dużych odległości w stosunkowo krótkim czasie. Dzięki samolotom możliwe jest podróżowanie na dalekie dystanse, łączenie odległych miejsc na całym świecie i ułatwianie globalnych interakcji i handlu. </p>
+            </section>
+    <section id="popularne-samoloty">
+      <h2>Popularne samoloty</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nazwa</th>
+            <th>Producent</th>
+            <th>Rok wprowadzenia</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Boeing 747</td>
+            <td>Boeing</td>
+            <td>1969</td>
+          </tr>
+          <tr>
+            <td>Airbus A320</td>
+            <td>Airbus</td>
+            <td>1988</td>
+          </tr>
+          <tr>
+            <td>Embraer E-Jet</td>
+            <td>Embraer</td>
+            <td>2004</td>
+          </tr>
+          <tr>
+            <td>Cessna 172</td>
+            <td>Cessna</td>
+            <td>1956</td>
+          </tr>
+          <tr>
+            <td>Boeing 787</td>
+            <td>Boeing</td>
+            <td>2011</td>
+          </tr>
+          <tr>
+            <td>Airbus A380</td>
+            <td>Airbus</td>
+            <td>2007</td>
+          </tr>
+          <tr>
+            <td>Bombardier Global 7500</td>
+            <td>Bombardier</td>
+            <td>2016</td>
+          </tr>
+          <tr>
+            <td>Gulfstream G650</td>
+            <td>Gulfstream Aerospace</td>
+            <td>2012</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="h4">
+        <h2 id="najlepszy-samolot">Najlepszy samolot (według mnie)</h2>
+        <p>Fairchild A-10/OA-10 Thunderbolt II, nazwa kodowa Warthog 
+             pierwszy amerykański samolot bliskiego wsparcia sił
+              lądowych Sił Powietrznych Stanów Zjednoczonych. A-10 jest
+             jednomiejscowym, efektywnym i bardzo odpornym na 
+             uszkodzenia, napędzanym dwoma silnikami 
+             turbowentylatorowymi samolotem szturmowym, 
+             przeznaczonym do niszczenia czołgów,
+              pojazdów opancerzonych i innych celów 
+             naziemnych. Nazwa „Thunderbolt” nawiązuje do P-47 Thunderbolta,
+              samolotu myśliwsko-bombowego z drugiej wojny światowej.</p>
+              <img src="a-10.jpg" alt="">
+              
+    </section>
+    <section id="galeria">
+      <h2>Galeria pozostałych losowych komerycjnych samolotów</h2>
+      <div class="galeria">
+        <img src="111.jpeg" alt="Samolot 1">
+        <img src="222.jpg" alt="Samolot 2">
+        <img src="333.jpg" alt="Samolot 3">
+        <img src="444.jpg" alt="Samolot 4">
+        <img src="555.jpg" alt="samolot 5">
+        <img src="999.jpg" alt="samolot 6">
+        <img src="1000.jpg" alt="samolot 7">
+        <img src="1111.jpg" alt="samolot 8">
+      </div>
+    </section>
+    <section id="kontakt">
+        <h1>Chcesz zagłębić się bardziej? Wypełnij formularz</h1>
+        <h2>Kontakt</h2>
+        <form id="formularz" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Wyślij</button>
+        </form>
+        <img src="like.jpg" alt="like">
+      </section>
+  </main>
+</body>
+
+</html>
