@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    background-image: url("lotnisko.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #666666;
+    border-radius: 10px;
+  }
+  h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 10px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  section {
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table th,
+  table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ffffff;
+  }
+  table th {
+    background-color: #444444;
+  }
+  tbody tr:nth-child(even) {
+    background-color: #555555;
+  }
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .galeria img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  .galeria img:hover {
+    transform: scale(1.2);
+  }
+  nav ul li a {
+    position: relative;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease;
+  }
+  nav ul li a:hover::after,
+  nav ul li a:focus::after,
+  nav ul li a:active::after {
+    transform: scaleX(1);
+  }
+  tbody tr:hover {
+    background-color: #777777;
+  }
+section#historia-samolotow {
+    background-color: #666666;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  section#h4 {
+    background-color: #666666;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  section#h4 img {
+    width: 30%;
+  } 
+  section#historia-samolotow p {
+    margin-bottom: 10px;
+  }
+  .banner-left,
+  .banner-right {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+  .banner-left img,
+  .banner-right img {
+    width: 400px;
+    height: 50vh;
+    object-fit: cover;
+  }
+  .banner-left {
+    left: 0;
+    transform: scaleX(-1);
+  }
+  .banner-right {
+    right: 0;
+  }
+  .banner-left:hover,
+  .banner-right:hover {
+    opacity: 1;
+  }
+  section#kontakt {
+    background-color: #888888;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  section#kontakt h1 {
+    color: #000000;
+  }
+  section#kontakt h2 {
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  label {
+    color: #000000;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+  }
+  button[type="submit"] {
+    background-color: #666666;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
